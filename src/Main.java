@@ -33,7 +33,7 @@ public class Main {
     private static void initRoutes(HttpServer server){
         server.createContext("/", Main::handleRequest);
 
-        server.createContext("/apps", Main::handleApps);
+        server.createContext("/apps/", Main::handleApps);
 
         server.createContext("/apps/profile",Main::handleAppsProfile);
     }
